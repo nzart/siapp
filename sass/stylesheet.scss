@@ -169,6 +169,9 @@ a {
     border: 3px solid $prime-color;
     font-family: $header-font;
     font-weight: $header-weight;
+    @media screen and (max-width: 500px) {
+        width: 350px;
+    }
     .mid {
         margin-top: 25px;
     }
@@ -238,6 +241,9 @@ a {
             width: 408px;
             height: 75px;
             border: 3px solid $second-color;
+            @media screen and (max-width: 500px) {
+                width: 350px;
+            }
             h1 {
                 font-family: $header-font;
                 font-weight: $header-weight;
