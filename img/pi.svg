@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="240px" height="240px" viewBox="0 0 240 240" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Chart</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Designs" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Today" transform="translate(-87.000000, -155.000000)">
+            <g id="Chart" transform="translate(87.000000, 155.000000)">
+                <circle id="Mask" fill="#5AB3AF" cx="120" cy="120" r="120"></circle>
+                <path d="M239.99592,121 C239.458723,186.813767 185.940517,240 120,240 L120,121 L239.99592,121 Z" id="Combined-Shape" fill="#BBBBBB"></path>
+                <circle id="Oval" fill="#FFFFFF" cx="120.5" cy="120.5" r="75.5"></circle>
+                <text id="38/50" font-family="HelveticaNeue-Medium, Helvetica Neue" font-size="32" font-weight="400" letter-spacing="0.03235918" fill="#000000">
+                    <tspan x="79" y="134">38/50</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
