@@ -1,0 +1,14 @@
+.twogrid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    @media screen and (max-width: 700px) {
+        grid-template-columns: 1fr;
+    }
+}
+
+.threegrid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+}
