@@ -4,29 +4,22 @@
 var added = [];
 
 //Get Data
-/*var userInput = function() {
-    return {
-        //name: document.getElementById('name').value,
-        amount: document.getElementById('amount').value
-    }
-};*/
-
-var userInput = function(){
-    return parseFloat(document.getElementById('amount').value);
+var userInput = function(){ 
+    return parseFloat(document.getElementById('amount').value || 0);
 }
 
 // Store Data
-/*var newSugar = function(){
-    return added.push(userInput());
-}*/
-
 var newSugar = function(){
     return added.push(userInput());
 }
 
 // New HTML
 function newBox() {
-    var newLi = document.createElement('li');
+    if (document.getElementById('amount').value == '') {
+        alert('Fill out the form!');
+        return false;
+    } else {
+      var newLi = document.createElement('li');
     newLi.classList.add('twogrid');
     
     var newName = document.getElementById('name').value;    
@@ -45,7 +38,10 @@ function newBox() {
     
     var boxhold = document.getElementById('boxhold').getElementsByTagName('ul')[0];
     
-    boxhold.appendChild(newLi);    
+    boxhold.appendChild(newLi);  
+    }
+    
+    
 }
 
 //Add total
@@ -56,7 +52,6 @@ function total() {
     }
     //return yeet;
     console.log(added);
-    
     document.getElementById('total').textContent = sum;
 };
 
@@ -78,6 +73,7 @@ var displayData = (function() {
         var box = newBox();
         var tot = total();
         var c = clear();
+        //var e = empty();
     };
   
     var addFood = document.getElementById('addFood');
