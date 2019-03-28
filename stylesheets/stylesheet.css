@@ -7,11 +7,11 @@
 @media screen and (max-width: 700px) {
   /* line 1, ../sass/_grid.scss */
   .twogrid {
-    grid-template-columns: 1fr;
+    display: block;
   }
 }
 
-/* line 10, ../sass/_grid.scss */
+/* line 11, ../sass/_grid.scss */
 .threegrid {
   display: grid;
   align-items: center;
@@ -204,22 +204,34 @@ a {
   font-family: "Helvetica Neue";
   font-weight: 500;
 }
+@media (max-width: 768px) {
+  /* line 165, ../sass/stylesheet.scss */
+  .box {
+    width: 395px;
+  }
+}
 @media screen and (max-width: 500px) {
   /* line 165, ../sass/stylesheet.scss */
   .box {
     width: 350px;
   }
 }
-/* line 175, ../sass/stylesheet.scss */
+/* line 178, ../sass/stylesheet.scss */
 .box .mid {
   margin-top: 25px;
 }
-/* line 178, ../sass/stylesheet.scss */
+/* line 181, ../sass/stylesheet.scss */
 .box label {
   padding-left: 1em;
   text-align: left;
 }
-/* line 182, ../sass/stylesheet.scss */
+@media (max-width: 700px) {
+  /* line 181, ../sass/stylesheet.scss */
+  .box label {
+    padding-left: .5em;
+  }
+}
+/* line 188, ../sass/stylesheet.scss */
 .box input {
   text-align: right;
   width: 80%;
@@ -228,18 +240,24 @@ a {
   border: 2px solid #ccc;
   transition: border 0.3s;
 }
-/* line 189, ../sass/stylesheet.scss */
+@media (max-width: 700px) {
+  /* line 188, ../sass/stylesheet.scss */
+  .box input {
+    width: 50%;
+  }
+}
+/* line 198, ../sass/stylesheet.scss */
 .box input:focus {
   border: 2px solid #555;
 }
-/* line 194, ../sass/stylesheet.scss */
+/* line 203, ../sass/stylesheet.scss */
 .box .work {
   display: block;
   line-height: 75px;
   vertical-align: middle;
 }
 
-/* line 201, ../sass/stylesheet.scss */
+/* line 210, ../sass/stylesheet.scss */
 .btnfood {
   display: inline-block;
   padding: 1.625em 4.25em;
@@ -251,7 +269,7 @@ a {
   font-size: 1em;
 }
 
-/* line 212, ../sass/stylesheet.scss */
+/* line 221, ../sass/stylesheet.scss */
 .addbtn {
   background-image: url(../img/add.svg);
   background-position: center;
@@ -264,7 +282,7 @@ a {
 /*************
 ** Chart
 *************/
-/* line 225, ../sass/stylesheet.scss */
+/* line 234, ../sass/stylesheet.scss */
 .intake {
   background-image: url(../img/intake.svg);
   background-position: center;
@@ -272,7 +290,7 @@ a {
   height: 13.44em;
 }
 
-/* line 232, ../sass/stylesheet.scss */
+/* line 241, ../sass/stylesheet.scss */
 .weight {
   background-image: url(../img/weight.svg);
   background-position: center;
@@ -283,16 +301,16 @@ a {
 /*************
 ** Single App
 *************/
-/* line 243, ../sass/stylesheet.scss */
+/* line 252, ../sass/stylesheet.scss */
 #boxhold {
   margin: 0 auto;
 }
-/* line 245, ../sass/stylesheet.scss */
+/* line 254, ../sass/stylesheet.scss */
 #boxhold ul {
   list-style-type: none;
   padding: 0;
 }
-/* line 248, ../sass/stylesheet.scss */
+/* line 257, ../sass/stylesheet.scss */
 #boxhold ul li {
   margin: 0 auto;
   width: 408px;
@@ -300,30 +318,30 @@ a {
   border: 3px solid #729DF9;
 }
 @media screen and (max-width: 500px) {
-  /* line 248, ../sass/stylesheet.scss */
+  /* line 257, ../sass/stylesheet.scss */
   #boxhold ul li {
     width: 350px;
   }
 }
-/* line 256, ../sass/stylesheet.scss */
+/* line 265, ../sass/stylesheet.scss */
 #boxhold ul li h1 {
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 1em;
 }
-/* line 261, ../sass/stylesheet.scss */
+/* line 270, ../sass/stylesheet.scss */
 #boxhold ul li p {
   font-family: "Helvetica Neue";
   font-weight: 500;
 }
-/* line 265, ../sass/stylesheet.scss */
+/* line 274, ../sass/stylesheet.scss */
 #boxhold ul li .work {
   font-family: "Helvetica Neue";
   font-weight: 500;
   font-size: 1em;
 }
 
-/* line 274, ../sass/stylesheet.scss */
+/* line 283, ../sass/stylesheet.scss */
 .work {
   font-family: "Helvetica Neue";
   font-weight: 500;
@@ -333,17 +351,17 @@ a {
 /*************
 ** Colors
 *************/
-/* line 284, ../sass/stylesheet.scss */
+/* line 293, ../sass/stylesheet.scss */
 .prime-color {
   background-color: #5AB3AF;
 }
 
-/* line 288, ../sass/stylesheet.scss */
+/* line 297, ../sass/stylesheet.scss */
 .second-color {
   border-color: #729DF9;
 }
 
-/* line 292, ../sass/stylesheet.scss */
+/* line 301, ../sass/stylesheet.scss */
 .third-color {
   border-color: #FFAA7C;
 }
@@ -351,32 +369,32 @@ a {
 /******************
 ** Padding & Margin
 ******************/
-/* line 300, ../sass/stylesheet.scss */
+/* line 309, ../sass/stylesheet.scss */
 .bot1 {
   margin-bottom: 1em;
 }
 
-/* line 303, ../sass/stylesheet.scss */
+/* line 312, ../sass/stylesheet.scss */
 .bot2 {
   margin-bottom: 2em;
 }
 
-/* line 306, ../sass/stylesheet.scss */
+/* line 315, ../sass/stylesheet.scss */
 .bot3 {
   margin-bottom: 3em;
 }
 
-/* line 309, ../sass/stylesheet.scss */
+/* line 318, ../sass/stylesheet.scss */
 .bot4 {
   margin-bottom: 4em;
 }
 
-/* line 312, ../sass/stylesheet.scss */
+/* line 321, ../sass/stylesheet.scss */
 .bot5 {
   margin-bottom: 5em;
 }
 
-/* line 315, ../sass/stylesheet.scss */
+/* line 324, ../sass/stylesheet.scss */
 .bot6 {
   margin-bottom: 6em;
 }
