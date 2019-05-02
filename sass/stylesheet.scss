@@ -10,7 +10,7 @@ body {
     //width: 414px;
     width: 100vw;
     height: 100vh;
-    
+    display: block;
 }
 
 .long {
@@ -223,6 +223,7 @@ a {
     background-image: url(../img/add.svg);
     background-position: center;
     background-repeat: no-repeat;
+    margin: 0 auto;
     height: 5em;
     width: 5em;
     border: none;
