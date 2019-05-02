@@ -19,7 +19,7 @@ function newBox() {
         alert('Fill out the form!');
         return false;
     } else {
-      var newLi = document.createElement('li');
+    var newLi = document.createElement('li');
     newLi.classList.add('twogrid');
     
     var newName = document.getElementById('name').value;    
@@ -40,8 +40,6 @@ function newBox() {
     
     boxhold.appendChild(newLi);  
     }
-    
-    
 }
 
 //Add total
@@ -57,7 +55,6 @@ function total() {
 
 //Clear after submit
 function clear() {
-    //document.getElementsByTagName('input').value = '';
     document.getElementById('name').value = '';
     document.getElementById('amount').value = '';
 }
@@ -73,7 +70,6 @@ var displayData = (function() {
         var box = newBox();
         var tot = total();
         var c = clear();
-        //var e = empty();
     };
   
     var addFood = document.getElementById('addFood');
