@@ -1,3 +1,9 @@
+.twoflex {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
 .twogrid {
     display: grid;
     align-items: center;
@@ -5,6 +11,9 @@
     @media screen and (max-width: 700px) {
         //grid-template-columns: 1fr;
         display: block;
+    }
+    p {
+        margin: .5em 0;
     }
 }
 

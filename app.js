@@ -19,9 +19,11 @@ function newBox() {
         alert('Fill out the form!');
         return false;
     } else {
+    //New list item    
     var newLi = document.createElement('li');
     newLi.classList.add('twogrid');
     
+    //New div with name    
     var newName = document.getElementById('name').value;    
     var newH = document.createElement('div');
     newH.classList.add('work');
@@ -29,6 +31,7 @@ function newBox() {
     newLi.appendChild(newH);
     newH.appendChild(n);
     
+    //New div with amount    
     var newAmount = document.getElementById('amount').value;
     var newA = document.createElement('div');
     newA.classList.add('work');
@@ -36,8 +39,8 @@ function newBox() {
     newLi.appendChild(newA);
     newA.appendChild(a);
     
+    //Add new list item to id    
     var boxhold = document.getElementById('boxhold').getElementsByTagName('ul')[0];
-    
     boxhold.appendChild(newLi);  
     }
 }
@@ -52,6 +55,29 @@ function total() {
     console.log(added);
     document.getElementById('total').textContent = sum;
 };
+
+//Percentage value
+function percent() {
+    var limit = document.getElementById('limit').textContent;
+    var num = parseInt(limit, 10);
+    
+    var totalNum = document.getElementById('total').textContent;
+    var newNumber = parseInt(totalNum, 10);
+    
+    var percentage = (newNumber / num) * 100;
+    
+    document.getElementById('percent').textContent = percentage + '%';
+    
+    function message() {
+        if (percentage > 100) {
+            alert('You have reached the daily limit!');
+        }
+    }
+    message();
+    console.log(num);
+    console.log(newNumber);
+    console.log(percentage);
+}
 
 //Clear after submit
 function clear() {
@@ -70,6 +96,7 @@ var displayData = (function() {
         var box = newBox();
         var tot = total();
         var c = clear();
+        var p = percent();
     };
   
     var addFood = document.getElementById('addFood');
@@ -81,7 +108,7 @@ var displayData = (function() {
             }
         });    
     
-})(userInput, newSugar, newBox, total, clear);
+})(userInput, newSugar, newBox, total, clear, percent);
 
 
 

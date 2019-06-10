@@ -1,24 +1,35 @@
 /* line 1, ../sass/_grid.scss */
+.twoflex {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* line 7, ../sass/_grid.scss */
 .twogrid {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
 @media screen and (max-width: 700px) {
-  /* line 1, ../sass/_grid.scss */
+  /* line 7, ../sass/_grid.scss */
   .twogrid {
     display: block;
   }
 }
+/* line 15, ../sass/_grid.scss */
+.twogrid p {
+  margin: .5em 0;
+}
 
-/* line 12, ../sass/_grid.scss */
+/* line 21, ../sass/_grid.scss */
 .twocir {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr;
 }
 
-/* line 19, ../sass/_grid.scss */
+/* line 28, ../sass/_grid.scss */
 .threegrid {
   display: grid;
   align-items: center;
@@ -387,31 +398,36 @@ i {
 ** Padding & Margin
 ******************/
 /* line 318, ../sass/stylesheet.scss */
+.bothalf {
+  margin-bottom: .5em;
+}
+
+/* line 321, ../sass/stylesheet.scss */
 .bot1 {
   margin-bottom: 1em;
 }
 
-/* line 321, ../sass/stylesheet.scss */
+/* line 324, ../sass/stylesheet.scss */
 .bot2 {
   margin-bottom: 2em;
 }
 
-/* line 324, ../sass/stylesheet.scss */
+/* line 327, ../sass/stylesheet.scss */
 .bot3 {
   margin-bottom: 3em;
 }
 
-/* line 327, ../sass/stylesheet.scss */
+/* line 330, ../sass/stylesheet.scss */
 .bot4 {
   margin-bottom: 4em;
 }
 
-/* line 330, ../sass/stylesheet.scss */
+/* line 333, ../sass/stylesheet.scss */
 .bot5 {
   margin-bottom: 5em;
 }
 
-/* line 333, ../sass/stylesheet.scss */
+/* line 336, ../sass/stylesheet.scss */
 .bot6 {
   margin-bottom: 6em;
 }
