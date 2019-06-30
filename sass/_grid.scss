@@ -8,7 +8,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
-    @media screen and (max-width: 700px) {
+    @media screen and (max-width: 840px) {
         //grid-template-columns: 1fr;
         display: block;
     }
@@ -17,6 +17,14 @@
     }
 }
 
+.twogrid_no_break {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    p {
+        margin: .5em 0;
+    }
+}
 
 .twocir {
     display: grid;

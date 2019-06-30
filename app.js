@@ -18,7 +18,7 @@ newBox = () => {
     } else {
     //New list item    
     const newLi = document.createElement('li');
-    newLi.classList.add('twogrid');
+    // newLi.classList.add('.twogrid');
     
     //New div with name    
     const newName = document.getElementById('name').value;
